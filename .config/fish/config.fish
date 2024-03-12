@@ -3,13 +3,9 @@ if status is-interactive
 end
 
 source /usr/share/autojump/autojump.fish
-alias coppelia="conda activate mlops && ~/CoppeliaSim_4_6/coppeliaSim.sh"
-alias py=python3
-alias gg=googler
-alias config="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
-# project dir aliases
 
-alias gnn="cd ~/projects/gnn"
+# source all aliases for .bash_aliases
+source $HOME/.bash_aliases
 
 
 # >>> conda initialize >>>
