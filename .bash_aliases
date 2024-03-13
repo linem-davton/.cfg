@@ -1,8 +1,11 @@
+alias ll='ls -alt'
+
 # obsidian directory, the environment variable is set in .bashrc
 alias py=python3
 alias gg=googler
 
-alias config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+alias config="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+alias configpush="config add -u && config commit -m save && config push github main"
 
 # aliases for obsidian git
 alias obs="git -C $OBSIDIAN_DIR"
