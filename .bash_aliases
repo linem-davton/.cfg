@@ -13,3 +13,6 @@ alias obspush="obs add . && obs commit -m save && obs push github main"
 alias obspull="obs pull"
 
 alias obd="cd $OBSIDIAN_DIR"
+
+# local aliases
+alias gnn="cd $HOME/projects/gnn/"
