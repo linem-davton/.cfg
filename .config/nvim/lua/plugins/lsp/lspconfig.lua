@@ -109,7 +109,6 @@ return {
 					cmd = {
 						"clangd",
 						"--clang-tidy",
-						"--clang-tidy-checks=bugprone-*,performance-*, cppcoreguidelines-*,modernize-*,readability-*",
 					},
 				})
 			end,

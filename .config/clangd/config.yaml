@@ -1,0 +1,9 @@
+Diagnostics:
+  ClangTidy:
+    Add:
+      - modernize*
+      - readability*
+      - performance*
+      - cppcoreguidelines*
+      - misc*
+    FastCheckFilter: Loose
