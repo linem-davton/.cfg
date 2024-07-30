@@ -40,7 +40,7 @@ return {
 				"eslint",
 				"jsonls",
 				"yamlls",
-				"pyright",
+				"pylsp",
 				"rust_analyzer",
 			},
 		})
@@ -49,10 +49,9 @@ return {
 			ensure_installed = {
 				"prettier", -- prettier formatter
 				"stylua", -- lua formatter
-				"isort",
-				"black",
-				"pylint",
 				"eslint_d",
+				"debugpy",
+				"codelldb",
 			},
 		})
 	end,

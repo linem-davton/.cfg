@@ -16,12 +16,11 @@ opt.splitright = true -- Put new windows right of current
 opt.signcolumn = "yes" -- Always show the signcolumn, otherwise it would shift the text each time
 
 -- tabs & Indentatiom
-opt.tabstop = 2 
-opt.shiftwidth = 2 
+opt.tabstop = 2
+opt.shiftwidth = 2
 opt.expandtab = true
 opt.autoindent = true
 opt.wrap = false -- Disable line wrap
-
 
 opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus" -- Sync with system clipboard
 opt.virtualedit = "block" -- Allow cursor to move where there is no text in visual block mode
@@ -30,4 +29,4 @@ opt.cursorline = true -- Enable highlighting of the current line
 
 -- theme and colors
 opt.termguicolors = true -- True color support
-opt.background ="dark"     
+opt.background = "dark"
