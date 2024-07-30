@@ -16,6 +16,8 @@ return {
 				yaml = { "prettier" },
 				markdown = { "prettier" },
 				lua = { "stylua" },
+				python = { "pylsp" },
+				cpp = { "clangd" }, -- Use clangd for C++ formatting
 			},
 			format_on_save = {
 				lsp_fallback = true,

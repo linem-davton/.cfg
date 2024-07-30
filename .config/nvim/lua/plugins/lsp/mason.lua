@@ -49,9 +49,9 @@ return {
 			ensure_installed = {
 				"prettier", -- prettier formatter
 				"stylua", -- lua formatter
-				"eslint_d",
-				"debugpy",
-				"codelldb",
+				"eslint_d", -- eslint_d linter
+				"debugpy", -- Python dap debugger
+				"codelldb", -- C++ dap debugger
 			},
 		})
 	end,

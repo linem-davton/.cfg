@@ -113,7 +113,7 @@ return {
 				})
 			end,
 			["pylsp"] = function()
-				lspconfig.pyright.setup({
+				lspconfig.pylsp.setup({
 					capabilities = capabilities,
 					-- Add specific Python configurations here
 				})
@@ -134,6 +134,56 @@ return {
 				lspconfig.tsserver.setup({
 					capabilities = capabilities,
 					-- Add specific TypeScript configurations here
+				})
+			end,
+			["html"] = function()
+				lspconfig.html.setup({
+					capabilities = capabilities,
+				})
+			end,
+			["cssls"] = function()
+				lspconfig.cssls.setup({
+					capabilities = capabilities,
+				})
+			end,
+			["tailwindcss"] = function()
+				lspconfig.tailwindcss.setup({
+					capabilities = capabilities,
+				})
+			end,
+			["ansiblels"] = function()
+				lspconfig.ansiblels.setup({
+					capabilities = capabilities,
+				})
+			end,
+			["bashls"] = function()
+				lspconfig.bashls.setup({
+					capabilities = capabilities,
+				})
+			end,
+			["dockerls"] = function()
+				lspconfig.dockerls.setup({
+					capabilities = capabilities,
+				})
+			end,
+			["docker_compose_language_service"] = function()
+				lspconfig.docker_compose_language_service.setup({
+					capabilities = capabilities,
+				})
+			end,
+			["eslint"] = function()
+				lspconfig.eslint.setup({
+					capabilities = capabilities,
+				})
+			end,
+			["jsonls"] = function()
+				lspconfig.jsonls.setup({
+					capabilities = capabilities,
+				})
+			end,
+			["yamlls"] = function()
+				lspconfig.yamlls.setup({
+					capabilities = capabilities,
 				})
 			end,
 		})
