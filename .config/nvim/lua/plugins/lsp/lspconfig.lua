@@ -115,6 +115,22 @@ return {
 			["pylsp"] = function()
 				lspconfig.pylsp.setup({
 					capabilities = capabilities,
+					settings = {
+						pylsp = {
+							plugins = {
+								pycodestyle = {
+									maxLineLength = 120,
+								},
+								yapf = {
+									based_on_style = "pep8",
+									column_limit = 120,
+								},
+								autopep8 = {
+									max_line_length = 120,
+								},
+							},
+						},
+					},
 					-- Add specific Python configurations here
 				})
 			end,
