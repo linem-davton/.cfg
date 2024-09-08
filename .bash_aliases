@@ -5,8 +5,12 @@ alias py=python3
 alias gg=googler
 alias cat=batcat
 alias cd=z
+
 # aliases for git
 alias gl="git log --oneline --graph --abbrev-commit --decorate --date=relative --all"
+alias gs="git status"
+alias gd="git diff"
+alias gac="git add . && git commit"
 
 alias config="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias configpush="config add -u && config commit -m save && config push github main"
