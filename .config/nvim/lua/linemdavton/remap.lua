@@ -3,9 +3,12 @@ vim.g.mapleader = " "
 local keymap = vim.keymap -- for conciseness
 local opts = { noremap = true, silent = true }
 
-keymap.set("n", "<leader>ft", vim.cmd.Ex, opts, { desc = "Open Explorer" })
+-- Basic keymaps ---
 keymap.set("i", "jj", "<ESC>", opts, { desc = "Exit insert mode" })
 keymap.set("n", "<leader>nh", vim.cmd.nohl, opts, { desc = "Nohighlights, clear searcg highlights" })
+keymap.set("n", "<leader>q", "<cmd>q<CR>", opts, { desc = "Close current buffer" })
+keymap.set("n", "<leader>Q", "<cmd>qa<CR>", opts, { desc = "Close all buffers" })
+keymap.set("n", "<leader>W", "<cmd>w<CR>", opts, { desc = "Save current buffer" })
 
 -- increment/decrement numbers
 keymap.set("n", "<leader>=", "<C-a>", opts, { desc = "Increment number" }) -- increment
@@ -54,7 +57,7 @@ keymap.set("n", "n", "nzzzv") -- Same for Search
 keymap.set("n", "N", "Nzzzv")
 
 -- Global Substitue highlighted word
-keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], opts)
+keymap.set("n", "<leader>ss", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], opts)
 
 -- Deugger setup
 keymap.set("n", "<Leader>dq", function()

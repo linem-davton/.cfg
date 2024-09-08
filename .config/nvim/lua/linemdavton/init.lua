@@ -12,3 +12,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.highlight.on_yank({ higroup = "IncSearch", timeout = 1000 })
 	end,
 })
+
+-- Save with W and w
+vim.api.nvim_create_user_command("W", "w", {})
+vim.api.nvim_create_user_command("Q", "qa", {})
