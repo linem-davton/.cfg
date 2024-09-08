@@ -6,7 +6,7 @@ alias gg=googler
 alias cat=batcat
 alias cd=z
 # aliases for git
-alias gitlg="git log --oneline --graph --abbrev-commit --decorate --date=relative --all"
+alias gl="git log --oneline --graph --abbrev-commit --decorate --date=relative --all"
 
 alias config="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias configpush="config add -u && config commit -m save && config push github main"
