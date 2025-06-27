@@ -134,6 +134,20 @@ return {
 					-- Add specific Python configurations here
 				})
 			end,
+			["pyright"] = function()
+				lspconfig.pyright.setup({
+					capabilities = capabilities,
+					settings = {
+						python = {
+							analysis = {
+								typeCheckingMode = "basic", -- or "strict"
+								autoSearchPaths = true,
+								useLibraryCodeForTypes = true,
+							},
+						},
+					},
+				})
+			end,
 			["rust_analyzer"] = function()
 				lspconfig.rust_analyzer.setup({
 					capabilities = capabilities,

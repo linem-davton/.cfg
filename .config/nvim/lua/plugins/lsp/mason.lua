@@ -41,6 +41,7 @@ return {
 				"jsonls",
 				"yamlls",
 				"pylsp",
+				"pyright",
 				"rust_analyzer",
 			},
 		})
